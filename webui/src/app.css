@@ -1,27 +1,6 @@
-@import "tailwindcss";
-@plugin "daisyui";
-@import url('https://mui.kernelsu.org/internal/insets.css');
+
 @import url('https://mui.kernelsu.org/internal/colors.css');
-
-:root {
-  --error: #ffb4ab;
-  --color-error: var(--error);
-  --onError: #690005;
-
-  --brand-gradient: linear-gradient(135deg, #ffb784 0%, #e6c0a0 100%);
-
-  background-color: var(--surface);
-  color: var(--onSurface);
-}
-
-[data-theme="light"] {
-
-  --error: #ba1a1a;
-  --color-error: var(--error);
-  --onError: #ffffff;
-
-  --brand-gradient: linear-gradient(135deg, #8f4e00 0%, #77583e 100%);
-}
+@import "tailwindcss";
 
 body {
   padding-top: var(--window-inset-top);
@@ -69,11 +48,11 @@ body {
 .toggle:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px var(--surface-container);
+  box-shadow: 0 0 0 4px var(--surfaceContainer);
 }
 
 .text-gradient {
-  background: var(--image-brand-gradient);
+  background: var(--primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
